@@ -7,9 +7,14 @@ import (
 )
 
 func TestAdd(t *testing.T) {
-	t.Log("Testing add.Add")
 	res := add.Add(3, 2)
-	t.Log("  ", "result", res)
+	if res != 5 {
+		t.Fail()
+	}
+}
+
+func TestSum(t *testing.T) {
+	res := add.Sum(3, 2)
 	if res != 5 {
 		t.Fail()
 	}
