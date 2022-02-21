@@ -26,3 +26,10 @@ func TestPlus(t *testing.T) {
 		t.Fail()
 	}
 }
+
+func TestInc(t *testing.T) {
+	res := add.Inc(3, 2)
+	if res != 5 {
+		t.Fail()
+	}
+}
