@@ -15,7 +15,7 @@ jobs:
         env:
           GOPROXY: "https://proxy.golang.org"
         run: go build .
-      - name: Test
+      - name: TestAdd
         env:
           GOPROXY: "https://proxy.golang.org"
-        run: go test -v
+        run: go test -v github.com/Dynatrace-Reinhard-Pilz/vs-code-sample/add
