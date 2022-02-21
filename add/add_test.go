@@ -19,3 +19,10 @@ func TestSum(t *testing.T) {
 		t.Fail()
 	}
 }
+
+func TestPlus(t *testing.T) {
+	res := add.Plus(3, 2)
+	if res != 5 {
+		t.Fail()
+	}
+}
